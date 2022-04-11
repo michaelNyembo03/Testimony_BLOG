@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mon temoignage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/temoignage.css">
+        <link rel="stylesheet" href="fontawesome6/fontawesome.css">
+        <link rel="stylesheet" href="fontawesome6/fontawesome.min.css">
+        <link rel="stylesheet" href="fontawesome6/all.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/9156669281.js"
+            crossorigin="anonymous"></script>
+   
+
+    </head>
+    <body>
+        <header>
+            <section class="home">
+                <div class="nav-container">
+                    <a class="logo" href="index.html">mon <i class="fa-solid fa-cross"></i>emoignage
+                    </a>
+                    <div class="menu">
+                        <i class="fa-solid fa-bars"></i>
+                        <div class="menu-list">
+                            <a href="index.html">acceuille</a>
+                            <a href="recevoirjesus.html">recevoir jesus</a>
+                            <a href="apropos.html">a propos</a>
+                            <a href="contact.html">contacts</a>
+                        </div>                    
+                    </div>
+                    <nav>
+                        <a href="index.html">acceuille</a>
+                        <a href="recevoirjesus.html">recevoir jesus</a>
+                        <a href="apropos.html">a propos</a>
+                        <a href="contact.html">contacts</a>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        <main>
+            <div class="main-content">
+                    <div class="poste">
+                          <h1>Jesus mon hero</h1>
+                          <i>Temoignage de Jean luc</i>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam totam possimus mollitia esse nisi reiciendis illo dignissimos. Expedita aspernatur harum, accusamus blanditiis placeat dolores tempore temporibus esse. Cum, rem.</p>
+
+                    </div>
+                    <div class="comment">
+                          <form name="commentFrom" onsubmit="return validation()">
+                              <input type="text" name="name" id="name" placeholder="tapez votre nom" required>
+                              <textarea placeholder="commentaire" name="comment-content" id="comment-id" required></textarea>
+                              <button type="submit" class="poste-btn" name="btn">poster</button>
+                          </form>
+                    </div>
+
+             </div>
+            <article>
+                <div class="comment-container">
+                    <p class="title">Commentaires</p>
+                    <div class="comment-box">
+                        
+                           <div>
+                           
+                           <p><i class="fa-solid fa-user"></i>&nbsp;&nbsp; <span>michaelNyembo</span></p>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium asperiores optio officia iste aspernatur similique a!</p>
+                           </div>
+                   </div>
+                   <div class="comment-box">
+                        
+                       <div>
+                       
+                       <p><i class="fa-solid fa-user"></i>&nbsp;&nbsp; <span>michaelNyembo</span></p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium asperiores optio officia iste aspernatur similique a!</p>
+                       </div>
+               </div>
+               <div class="comment-box">
+                        
+                   <div>
+                   
+                   <p><i class="fa-solid fa-user"></i>&nbsp;&nbsp; <span>michaelNyembo</span></p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium asperiores optio officia iste aspernatur similique a!</p>
+                   </div>
+           </div>
+                </div>
+
+                <div class="see-more">
+                    <a class="btn ancien" href="#" aria-label="">ancien</a>
+                    <a class="btn nouveau" href="#" aria-label="">nouveau</a>
+                </div>
+                
+            </article>
+
+
+        </main>
+        <footer>
+            <div class="contact">
+                <div class="items">
+                    <i class="fa-brands fa-facebook"></i>
+                    MonTemoignageOfficiel
+                </div>
+                <div class="items">
+                    <i class="fa-solid fa-envelope"></i>
+                    MonTemoignage@gmail.com
+                </div>
+                <div class="items">
+                    <i class="fa-brands fa-instagram-square"></i>
+                    MonTemoignageOfficiel
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copy">Ⓒ MonTemoignage.com <span>2022</span> Tous
+                    droits réservés.</p>
+                <p class="logo">mon <i class="fa-solid fa-cross"></i>emoignage
+                </p>
+            </div>
+        </footer>
+        <script src="js/validation.js"></script>
+        <script src="js/index.js" async defer></script>
+        <script>
+              $(function(){
+                   $('.poste-btn').click(function(){
+                       if($('#name').val()==="" || $('#comment-id').val() === ""){
+                           alert('Remplissez tous les champs svp!')
+                        return false
+                      }
+                   })
+              })
+        </script>
+    </body>
+</html>
